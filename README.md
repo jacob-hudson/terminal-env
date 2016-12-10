@@ -7,4 +7,4 @@ My custom terminal setup
 
 ## To Install
 - Download this repo
-- Run either `append_profile.sh` (for OS X and most Linux systems) or `append_rc.sh` (for the WSL)
+- Run either `append_profile.sh` (for OS X and most Linux systems, including Git Bash for Windows) or `append_rc.sh` (for the WSL)
