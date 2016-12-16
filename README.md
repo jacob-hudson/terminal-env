@@ -1,5 +1,5 @@
 # terminal-env
-My custom terminal setup
+My custom terminal setup for a variety of OSes
 
 ## Font Choice
 - I am using `Noto Sans` from Google Noto (I prefer bold Sans-serif fonts given my vision).
