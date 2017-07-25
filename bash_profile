@@ -48,6 +48,9 @@ function parse_git_dirty {
 	fi
 }
 
+# extra changes for iTerm2
+alias ls="ls -GFh"
+
 #export PS1="\[\e[1;32m\]\u\[\e[1;35m\]@\[\e[1;31m\]\h\[\e[m\]\[\e[1;33m\]\w\[\e[m\]\\$\[\e[36m\]\`parse_git_branch\`\[\e[m\] "
 export PS1="\[\e[1;32m\]\u\[\e[1;35m\]@\[\e[m\]\[\e[1;31m\]\h\[\e[m\]\[\e[1;33m\]\w\[\e[m\]\[\e[36m\]\`parse_git_branch\`\[\e[m\]\\$ "
 
