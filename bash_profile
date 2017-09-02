@@ -52,6 +52,10 @@ function parse_git_dirty {
 #export PS1="\[\e[1;32m\]\u\[\e[1;35m\]@\[\e[m\]\[\e[1;31m\]\h\[\e[m\]\[\e[1;33m\]\w\[\e[m\]\[\e[36m\]\`parse_git_branch\`\[\e[m\]\\$ "
 export PS1="\[\e[4;32m\]\u\[\e[4;32m\]@\[\e[m\]\[\e[4;32m\]\h\[\e[m\]\[\e[4;34m\]\w\[\e[m\]\[\e[4;31m\]\`parse_git_branch\`\[\e[m\]\\$ "
 
+# grep color for macOS
+export GREP_OPTIONS='--color=always'
+export GREP_COLOR='0;37;44'
+
 alias ls="ls -GFh"
 eval $(ssh-agent)
 ssh-add
