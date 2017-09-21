@@ -47,12 +47,10 @@ function parse_git_dirty {
 		echo ""
 	fi
 }
-# terminal clock - top right corner
-while sleep 1; do printf "\e[s\e[1;%sH%s\e[u" $((COLUMNS-27)) "$(date)"; done &
 
 #export PS1="\[\e[1;32m\]\u\[\e[1;35m\]@\[\e[1;31m\]\h\[\e[m\]\[\e[1;33m\]\w\[\e[m\]\\$\[\e[36m\]\`parse_git_branch\`\[\e[m\] "
 #export PS1="\[\e[1;32m\]\u\[\e[1;35m\]@\[\e[m\]\[\e[1;31m\]\h\[\e[m\]\[\e[1;33m\]\w\[\e[m\]\[\e[36m\]\`parse_git_branch\`\[\e[m\]\\$ "
-export PS1="\[\e[4;32m\]\u\[\e[4;32m\]@\[\e[m\]\[\e[4;32m\]\h\[\e[m\]\[\e[4;34m\]\w\[\e[m\]\[\e[4;31m\]\`parse_git_branch\`\[\e[m\]\\$ "
+export PS1="\[\e[4;32m\]\u\[\e[4;32m\]@\[\e[m\]\[\e[4;32m\]\h\[\e[m\]:\[\e[4;34m\]\w\[\e[m\]\[\e[4;31m\]\`parse_git_branch\`\[\e[m\]\\$ "
 
 # grep color for macOS
 export GREP_OPTIONS='--color=always'
@@ -61,3 +59,5 @@ export GREP_COLOR='0;37;44'
 alias ls="ls -GFh"
 eval $(ssh-agent)
 ssh-add
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
