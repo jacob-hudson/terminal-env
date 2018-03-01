@@ -60,4 +60,8 @@ alias ls="ls -GFh"
 eval $(ssh-agent)
 ssh-add
 
+if [ -f ~/iterm_random_tab.sh ];
+ then . ~/iterm_random_tab.sh
+fi
+
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
