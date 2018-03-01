@@ -56,12 +56,12 @@ export PS1="\[\e[4;32m\]\u\[\e[4;32m\]@\[\e[m\]\[\e[4;32m\]\h\[\e[m\]:\[\e[4;34m
 export GREP_OPTIONS='--color=always'
 export GREP_COLOR='0;37;44'
 
-alias ls="ls -GFh"
-eval $(ssh-agent)
-ssh-add
-
 if [ -f ~/iterm_random_tab.sh ];
  then . ~/iterm_random_tab.sh
 fi
+
+alias ls="ls -GFh"
+eval $(ssh-agent)
+ssh-add
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
