@@ -99,5 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ls="ls -GFh"
+
 eval $(ssh-agent)
 ssh-add
+export PATH="/usr/local/opt/ruby/bin:$PATH"
